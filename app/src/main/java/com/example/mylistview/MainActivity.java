@@ -52,13 +52,13 @@ public class MainActivity extends AppCompatActivity {
         heroes = new ArrayList<>();
 
         for (int i = 0; i < dataName.length; i++) {
-             Hero hero = new Hero();
-             hero.setPhoto(dataPhoto.getResourceId(i, -1));
-             hero.setName(dataName[i]);
-             hero.setDescription(dataDescription[i]);
-             heroes.add(hero);
-         }
+            Hero hero = new Hero();
+            hero.setPhoto(dataPhoto.getResourceId(i, -1));
+            hero.setName(dataName[i]);
+            hero.setDescription(dataDescription[i]);
+            heroes.add(hero);
+        }
 
-         adapter.setHeroes(heroes);
+        adapter.setHeroes(heroes);
     }
 }
